@@ -1,0 +1,415 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_payroll_grade_structure
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-12 09:11+0000\n"
+"PO-Revision-Date: 2026-01-12 09:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_payroll_grade_structure
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_hr_contract_form_inherit
+msgid ""
+"<i class=\"fa fa-exclamation-triangle\"/> \n"
+"<strong>Warning:</strong> Please click \"Apply Salary Structure\" to update the salary details."
+msgstr ""
+"<i class=\"fa fa-exclamation-triangle\"/> \n"
+"<strong>تحذير:</strong> يرجى النقر على \"تطبيق هيكل الرواتب\" لتحديث تفاصيل الراتب."
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_grade_level__active
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_salary_grade__active
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_grade_level_search
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_salary_grade_search
+msgid "Active"
+msgstr "نشط"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_grade_level__allowances
+msgid "Additional allowances for this level"
+msgstr "بدلات إضافية لهذا المستوى"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_grade_level__allowances
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_hr_contract__allowances
+msgid "Allowances"
+msgstr "البدلات"
+
+#. module: hr_payroll_grade_structure
+#. odoo-python
+#: code:addons/hr_payroll_grade_structure/models/grade_level.py:0
+#, python-format
+msgid "Allowances cannot be negative!"
+msgstr "لا يمكن أن تكون البدلات سالبة!"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_hr_contract__allowances
+msgid "Allowances from the selected grade level"
+msgstr "البدلات من مستوى الرتبة المحدد"
+
+#. module: hr_payroll_grade_structure
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_hr_contract_form_inherit
+msgid "Apply Salary Structure"
+msgstr "تطبيق هيكل الرواتب"
+
+#. module: hr_payroll_grade_structure
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_grade_level_search
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_salary_grade_search
+msgid "Archived"
+msgstr "مؤرشف"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_grade_level__basic_salary
+msgid "Base salary amount for this level"
+msgstr "مبلغ الراتب الأساسي لهذا المستوى"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_grade_level__basic_salary
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_hr_contract__basic_salary
+msgid "Basic Salary"
+msgstr "الراتب الأساسي"
+
+#. module: hr_payroll_grade_structure
+#. odoo-python
+#: code:addons/hr_payroll_grade_structure/models/grade_level.py:0
+#, python-format
+msgid "Basic salary cannot be negative!"
+msgstr "لا يمكن أن يكون الراتب الأساسي سالباً!"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_hr_contract__basic_salary
+msgid "Basic salary from the selected grade level"
+msgstr ""
+
+#. module: hr_payroll_grade_structure
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_hr_contract_form_inherit
+msgid "Click to apply the selected salary structure to this contract"
+msgstr "انقر لتطبيق هيكل الرواتب المحدد على هذا العقد"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model,name:hr_payroll_grade_structure.model_hr_contract
+msgid "Contract"
+msgstr "عقد"
+
+#. module: hr_payroll_grade_structure
+#: model_terms:ir.actions.act_window,help:hr_payroll_grade_structure.action_grade_level
+msgid "Create your first Grade Level"
+msgstr "إنشاء مستوى رتبة أول"
+
+#. module: hr_payroll_grade_structure
+#: model_terms:ir.actions.act_window,help:hr_payroll_grade_structure.action_salary_grade
+msgid "Create your first Salary Grade"
+msgstr "إنشاء درجة راتب أولى"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_grade_level__create_uid
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_salary_grade__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_grade_level__create_date
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_salary_grade__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_grade_level__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_grade_level__currency_id
+msgid "Currency for salary amounts"
+msgstr "العملة لمبالغ الرواتب"
+
+#. module: hr_payroll_grade_structure
+#: model_terms:ir.actions.act_window,help:hr_payroll_grade_structure.action_grade_level
+msgid "Define grade levels (A/B/C/D) for each salary grade.\n                Each level has a specific basic salary and allowances."
+msgstr "حدد مستويات الرتب (أ/ب/ج/د) لكل درجة راتب.\n                كل مستوى له راتب أساسي وبدلات محددة."
+
+#. module: hr_payroll_grade_structure
+#: model_terms:ir.actions.act_window,help:hr_payroll_grade_structure.action_salary_grade
+msgid "Define salary grades to organize your company's compensation structure.\n                Each grade can have multiple levels (A/B/C/D) with different salary amounts."
+msgstr "حدد درجات الرواتب لتنظيم هيكل التعويضات في شركتك.\n                يمكن أن تحتوي كل درجة على مستويات متعددة (أ/ب/ج/د) بمبالغ رواتب مختلفة."
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_grade_level__display_name
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_salary_grade__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_grade_level__name
+msgid "Display name for the grade level"
+msgstr "اسم العرض لمستوى الرتبة"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_salary_grade__code
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_salary_grade_search
+msgid "Grade Code"
+msgstr "كود الرتبة"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model,name:hr_payroll_grade_structure.model_grade_level
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_hr_contract__grade_level_id
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_grade_level_form
+msgid "Grade Level"
+msgstr "مستوى الرتبة"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.actions.act_window,name:hr_payroll_grade_structure.action_grade_level
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_salary_grade__grade_level_ids
+#: model:ir.ui.menu,name:hr_payroll_grade_structure.menu_grade_level
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_grade_level_tree
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_salary_grade_form
+msgid "Grade Levels"
+msgstr "مستويات الرتب"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_salary_grade__name
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_salary_grade_search
+msgid "Grade Name"
+msgstr "اسم الرتبة"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_grade_level__level
+msgid "Grade level (A/B/C/D)"
+msgstr "مستوى الرتبة (أ/ب/ج/د)"
+
+#. module: hr_payroll_grade_structure
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_grade_level_search
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_salary_grade_search
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_grade_level__id
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_salary_grade__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_hr_contract__is_salary_applied
+msgid "Indicates if the salary structure has been applied"
+msgstr "يشير إلى ما إذا تم تطبيق هيكل الرواتب"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_grade_level__write_uid
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_salary_grade__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_grade_level__write_date
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_salary_grade__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_grade_level__level
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_grade_level_search
+msgid "Level"
+msgstr "المستوى"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields.selection,name:hr_payroll_grade_structure.selection__grade_level__level__a
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_grade_level_search
+msgid "Level A"
+msgstr "المستوى أ"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields.selection,name:hr_payroll_grade_structure.selection__grade_level__level__b
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_grade_level_search
+msgid "Level B"
+msgstr "المستوى ب"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields.selection,name:hr_payroll_grade_structure.selection__grade_level__level__c
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_grade_level_search
+msgid "Level C"
+msgstr "المستوى ج"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields.selection,name:hr_payroll_grade_structure.selection__grade_level__level__d
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_grade_level_search
+msgid "Level D"
+msgstr "المستوى د"
+
+#. module: hr_payroll_grade_structure
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_salary_grade_form
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_salary_grade_tree
+msgid "Levels"
+msgstr "المستويات"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_salary_grade__grade_level_ids
+msgid "Levels associated with this salary grade"
+msgstr "المستويات المرتبطة بدرجة الراتب هذه"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_grade_level__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_salary_grade__name
+msgid "Name of the salary grade"
+msgstr "اسم درجة الراتب"
+
+#. module: hr_payroll_grade_structure
+#. odoo-python
+#: code:addons/hr_payroll_grade_structure/models/grade_level.py:0
+#: code:addons/hr_payroll_grade_structure/models/grade_level.py:0
+#, python-format
+msgid "New Grade Level"
+msgstr "مستوى جديد"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_salary_grade__level_count
+msgid "Number of Levels"
+msgstr "عدد المستويات"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_salary_grade__sequence
+msgid "Order of display"
+msgstr "ترتيب العرض"
+
+#. module: hr_payroll_grade_structure
+#. odoo-python
+#: code:addons/hr_payroll_grade_structure/models/hr_contract.py:0
+#, python-format
+msgid "Please select a Grade Level first!"
+msgstr "الرجاء اختيار مستوى رتبة أولا!"
+
+#. module: hr_payroll_grade_structure
+#. odoo-python
+#: code:addons/hr_payroll_grade_structure/models/hr_contract.py:0
+#, python-format
+msgid "Please select a Salary Grade first!"
+msgstr "الرجاء اختيار درجة راتب أولا!"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_hr_contract__is_salary_applied
+msgid "Salary Applied"
+msgstr "راتب تم تطبيقه"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model,name:hr_payroll_grade_structure.model_salary_grade
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_grade_level__salary_grade_id
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_hr_contract__salary_grade_id
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_grade_level_search
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_salary_grade_form
+msgid "Salary Grade"
+msgstr "درجة الراتب"
+
+#. module: hr_payroll_grade_structure
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_hr_contract_form_inherit
+msgid "Salary Grade Structure"
+msgstr "هيكل درجات الرواتب"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.actions.act_window,name:hr_payroll_grade_structure.action_salary_grade
+#: model:ir.ui.menu,name:hr_payroll_grade_structure.menu_salary_grade
+#: model:ir.ui.menu,name:hr_payroll_grade_structure.menu_salary_grade_root
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_salary_grade_tree
+msgid "Salary Grades"
+msgstr "درجات الرواتب"
+
+#. module: hr_payroll_grade_structure
+#. odoo-python
+#: code:addons/hr_payroll_grade_structure/models/hr_contract.py:0
+#, python-format
+msgid "Salary structure applied from Grade Level: %s"
+msgstr "تم تطبيق هيكل الرواتب من مستوى الرتبة: %s"
+
+#. module: hr_payroll_grade_structure
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_grade_level_search
+msgid "Search Grade Levels"
+msgstr "بحث عن مستويات الرتب"
+
+#. module: hr_payroll_grade_structure
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_salary_grade_search
+msgid "Search Salary Grades"
+msgstr "بحث عن درجات الرواتب"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_hr_contract__grade_level_id
+msgid "Select the grade level (A/B/C/D)"
+msgstr "حدد مستوى الرتبة (أ/ب/ج/د)"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_hr_contract__salary_grade_id
+msgid "Select the salary grade for this contract"
+msgstr "حدد درجة الراتب لهذا العقد"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_salary_grade__sequence
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_salary_grade_search
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_grade_level__active
+msgid "Set to false to archive the grade level"
+msgstr "اضبط على خطأ لإخفاء مستوى الرتبة"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_salary_grade__active
+msgid "Set to false to archive the salary grade"
+msgstr "اضبط على خطأ لإخفاء درجة الراتب"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.constraint,message:hr_payroll_grade_structure.constraint_salary_grade_code_unique
+msgid "The salary grade name must be unique!"
+msgstr "يجب أن يكون اسم درجة الراتب فريداً!"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_grade_level__salary_grade_id
+msgid "The salary grade this level belongs to"
+msgstr "درجة الراتب التي ينتمي إليها هذا المستوى"
+
+#. module: hr_payroll_grade_structure
+#. odoo-python
+#: code:addons/hr_payroll_grade_structure/models/hr_contract.py:0
+#, python-format
+msgid "The selected Grade Level does not belong to the selected Salary Grade!"
+msgstr "مستوى الرتبة المحدد لا ينتمي إلى درجة الراتب المحددة!"
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.constraint,message:hr_payroll_grade_structure.constraint_grade_level_unique_grade_level
+msgid "This level already exists for the selected salary grade!"
+msgstr ""
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,field_description:hr_payroll_grade_structure.field_grade_level__total_salary
+msgid "Total Salary"
+msgstr ""
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_grade_level__total_salary
+msgid "Total salary (Basic + Allowances)"
+msgstr ""
+
+#. module: hr_payroll_grade_structure
+#: model:ir.model.fields,help:hr_payroll_grade_structure.field_salary_grade__code
+msgid "Unique code for the salary grade"
+msgstr "كود فريد لدرجة الراتب"
+
+#. module: hr_payroll_grade_structure
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_salary_grade_form
+msgid "e.g., SD-01"
+msgstr "مثال: SD-01"
+
+#. module: hr_payroll_grade_structure
+#: model_terms:ir.ui.view,arch_db:hr_payroll_grade_structure.view_salary_grade_form
+msgid "e.g., Senior Developer"
+msgstr "مثال: مطور أول"

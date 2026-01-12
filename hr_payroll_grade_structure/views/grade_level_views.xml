@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Grade Level Tree View -->
+    <record id="view_grade_level_tree" model="ir.ui.view">
+        <field name="name">grade.level.tree</field>
+        <field name="model">grade.level</field>
+        <field name="arch" type="xml">
+            <tree string="Grade Levels" expand="1" decoration-info="level=='A'" decoration-success="level=='B'" decoration-warning="level=='C'" decoration-danger="level=='D'">
+                <field name="salary_grade_id"/>
+                <field name="level"/>
+                <field name="basic_salary" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                <field name="allowances" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                <field name="total_salary" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                <field name="currency_id" column_invisible="1"/>
+                <field name="active" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Grade Level Form View -->
+    <record id="view_grade_level_form" model="ir.ui.view">
+        <field name="name">grade.level.form</field>
+        <field name="model">grade.level</field>
+        <field name="arch" type="xml">
+            <form string="Grade Level">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="salary_grade_id" options="{'no_create': True}"/>
+                            <field name="level"/>
+                            <field name="active" widget="boolean_button" options="{'terminology': 'archive'}"/>
+                        </group>
+                        <group>
+                            <field name="basic_salary" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                            <field name="allowances" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                            <field name="total_salary" widget="monetary" options="{'currency_field': 'currency_id'}" readonly="1"/>
+                            <field name="currency_id" invisible="1"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Grade Level Search View -->
+    <record id="view_grade_level_search" model="ir.ui.view">
+        <field name="name">grade.level.search</field>
+        <field name="model">grade.level</field>
+        <field name="arch" type="xml">
+            <search string="Search Grade Levels">
+                <field name="salary_grade_id" string="Salary Grade"/>
+                <field name="level" string="Level"/>
+                <separator/>
+                <filter string="Active" name="active" domain="[('active', '=', True)]"/>
+                <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+                <separator/>
+                <filter string="Level A" name="level_a" domain="[('level', '=', 'A')]"/>
+                <filter string="Level B" name="level_b" domain="[('level', '=', 'B')]"/>
+                <filter string="Level C" name="level_c" domain="[('level', '=', 'C')]"/>
+                <filter string="Level D" name="level_d" domain="[('level', '=', 'D')]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Salary Grade" name="group_salary_grade" context="{'group_by': 'salary_grade_id'}"/>
+                    <filter string="Level" name="group_level" context="{'group_by': 'level'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Grade Level Action -->
+    <record id="action_grade_level" model="ir.actions.act_window">
+        <field name="name">Grade Levels</field>
+        <field name="res_model">grade.level</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_group_salary_grade': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first Grade Level
+            </p>
+            <p>
+                Define grade levels (A/B/C/D) for each salary grade.
+                Each level has a specific basic salary and allowances.
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Item -->
+    <menuitem id="menu_grade_level"
+              name="Grade Levels"
+              parent="menu_salary_grade_root"
+              action="action_grade_level"
+              sequence="20"/>
+</odoo>

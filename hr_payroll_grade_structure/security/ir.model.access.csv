@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_salary_grade_user,access.salary.grade.user,model_salary_grade,base.group_user,1,0,0,0
+access_salary_grade_hr_user,access.salary.grade.hr.user,model_salary_grade,hr.group_hr_user,1,1,1,0
+access_salary_grade_hr_manager,access.salary.grade.hr.manager,model_salary_grade,hr.group_hr_manager,1,1,1,1
+access_grade_level_user,access.grade.level.user,model_grade_level,base.group_user,1,0,0,0
+access_grade_level_hr_user,access.grade.level.hr.user,model_grade_level,hr.group_hr_user,1,1,1,0
+access_grade_level_hr_manager,access.grade.level.hr.manager,model_grade_level,hr.group_hr_manager,1,1,1,1
