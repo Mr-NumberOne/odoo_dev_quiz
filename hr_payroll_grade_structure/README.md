@@ -1,88 +1,94 @@
 # HR Payroll Grade Structure
 
 ## Overview
-This module enhances the HR Payroll system by introducing a structured salary grade and level management system for Odoo 17. It allows HR administrators to define salary grades, create multiple levels within each grade, and automatically apply these structures to employee contracts.
+This module provides a comprehensive salary grade and level management system for Odoo 17. It allows HR managers to define salary structures and automatically apply them to employee contracts.
+
 
 ## Features
 
-### Salary Grade Management
+### 1. Salary Grade Management
 - Create and manage salary grades with unique codes
 - Organize grades by sequence for easy sorting
 - Archive/unarchive functionality
 
-### Grade Level Management
-- Define up to four levels (A/B/C/D) for each salary grade
+### 2. Grade Level Management
+- Define four levels (A/B/C/D) for each salary grade
 - Set basic salary and allowances for each level
 - Automatic total salary calculation
+- Color-coded display in tree view
 
-### Contract Integration
-- Seamless integration with HR Contracts
-- Automatic salary structure application
-- Domain filtering for grade levels based on selected grade
+### 3. HR Contract Integration
+- Extend HR contracts with salary grade fields
+- Automatic domain filtering for grade levels
+- One-click "Apply Salary Structure" button
+- Automatic wage calculation
+
+### 4. Business Constraints
+- **Unique Grade Codes**: Each salary grade must have a unique code
+- **Unique Levels**: Prevents duplicate levels (A/B/C/D) within the same salary grade
+- **Positive Values**: Basic salary and allowances cannot be negative
+- **Grade-Level Validation**: Ensures selected grade level belongs to the selected salary grade
 
 ## Installation
+
 1. Copy this module to your Odoo addons directory
 2. Update the apps list: Settings > Apps > Update Apps List
 3. Search for "HR Payroll Grade Structure"
 4. Click Install
 
-## Configuration
-
-### Setting Up Salary Grades
-1. Navigate to **HR > Configuration > Payroll > Salary Grades**
-2. Click **New** to create a salary grade
-3. Enter a name and unique code for the grade
-4. Add grade levels (A/B/C/D) with their respective salaries and allowances
-
-### Applying to Contracts
-1. Open an employee contract
-2. Select a Salary Grade
-3. Choose a Grade Level
-4. Click "Apply Salary Structure" to auto-populate salary fields
+## Dependencies
+- `base`
+- `hr`
+- `hr_contract`
 
 ## Usage
 
-### Salary Grade Creation
-![Salary Grades Menuitems](static/src/images/o1.PNG)
-*Figure 1: Accessing Salary Grades* 
+### Creating Salary Grades
+1. Navigate to: HR > Configuration > Salary Grades > Salary Grades
+2. Click "New"
+3. Enter grade name and code
+4. Add grade levels (A/B/C/D) with their respective salaries
 
-![Salary Grades List View](static/src/images/o2.PNG)
-*Figure 2: Viewing all Salary Grades*
+![Salary Grades Menuitems](./static/src/images/o1.jpg)
+*Figure 1: Salary Grades Menuitems*
 
-![Creating New Salary Grade](static/src/images/o4.PNG)
-*Figure 3: Creating a New Salary Grade*
+![Salary Grades List View](./static/src/images/o2.jpg)
+*Figure 2: Salary Grades List View*
 
-### Grade Level Configuration
-![Grade Levels Configuration](static/src/images/o5.PNG)
-*Figure 4: Configuring Grade Levels* 
+![Salary Grades Form View](./static/src/images/o3.jpg)
+*Figure 3: Salary Grades Form View*
 
-### Contract Integration
-![Salary Structure before applying](static/src/images/o5.PNG)
-*Figure 5: Contract with Salary Grade Selection*
+![Creating New Salary Grade](./static/src/images/o4.jpg)
+*Figure 4: Creating a New Salary Grade*
 
-![Salary Structure Applied to Contract](static/src/images/o6.PNG)
-*Figure 6: Salary Structure Successfully Applied*
 
-## Dependencies
-- Odoo 17.0
-- hr (Human Resources)
-- hr_contract (Employee Contracts)
+### Applying Salary Structure to Contracts
+1. Open an employee contract
+2. Select a Salary Grade
+3. Select a Grade Level (filtered by the selected grade)
+4. Click "Apply Salary Structure"
+5. The basic salary, allowances, and wage will be automatically populated
 
-## Technical Information
+![Grade Levels Configuration](./static/src/images/o5.jpg)
+*Figure 5: Salary Structure before applying*
+![Salary Structure Applied to Contract](./static/src/images/o6.jpg)
+*Figure 6: Salary Structure Successfully Applied to Contract*
+
+## Technical Details
 
 ### Models
-- `salary.grade`: Manages salary grades
-- `grade.level`: Handles grade levels and their configurations
+- `salary.grade`: Main model for salary grades
+- `grade.level`: Model for grade levels (A/B/C/D)
 - `hr.contract`: Extended with salary grade fields
 
 ### Security
-Access rights are configured for different user roles:
-- Employees: Read-only access
+Access rights are configured for:
+- All Users: Read-only access
 - HR Officers: Read, Write, Create
 - HR Managers: Full access (Read, Write, Create, Delete)
 
 ## License
-This module is licensed under LGPL-3.
+LGPL-3
 
 ## Author
 Ahmed Maher Ali Ahmed AL-Maqtari
