@@ -49,16 +49,16 @@ This module provides a comprehensive salary grade and level management system fo
 3. Enter grade name and code
 4. Add grade levels (A/B/C/D) with their respective salaries
 
-![Salary Grades Menuitems](images/o1.PNG)
+![Salary Grades Menuitems](./images/o1.PNG)
 *Figure 1: Salary Grades Menuitems*
 
-![Salary Grades List View](images/o2.PNG)
+![Salary Grades List View](./images/o2.PNG)
 *Figure 2: Salary Grades List View*
 
-![Salary Grades Form View](images/o3.PNG)
+![Salary Grades Form View](./images/o3.PNG)
 *Figure 3: Salary Grades Form View*
 
-![Creating New Salary Grade](images/o4.PNG)
+![Creating New Salary Grade](./images/o4.PNG)
 *Figure 4: Creating a New Salary Grade*
 
 
@@ -69,9 +69,9 @@ This module provides a comprehensive salary grade and level management system fo
 4. Click "Apply Salary Structure"
 5. The basic salary, allowances, and wage will be automatically populated
 
-![Grade Levels Configuration](images/o5.PNG)
+![Grade Levels Configuration](./images/o5.PNG)
 *Figure 5: Salary Structure before applying*
-![Salary Structure Applied to Contract](images/o6.PNG)
+![Salary Structure Applied to Contract](./images/o6.PNG)
 *Figure 6: Salary Structure Successfully Applied to Contract*
 
 ## Technical Details
